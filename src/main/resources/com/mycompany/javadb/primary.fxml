@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<GridPane alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #fff;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.javadb.PrimaryController">
+  <columnConstraints>
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="600.0" minWidth="10.0" prefWidth="300.0" />
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="301.60003662109375" minWidth="0.0" prefWidth="300.0" />
+  </columnConstraints>
+  <rowConstraints>
+      <RowConstraints maxHeight="96.00000610351563" minHeight="10.0" prefHeight="96.00000610351563" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="87.19998168945312" minHeight="0.0" prefHeight="30.399993896484375" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="194.4" minHeight="10.0" prefHeight="110.39996948242191" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="140.80002441406248" minHeight="10.0" prefHeight="138.4000305175781" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <Label alignment="TOP_CENTER" prefHeight="43.0" prefWidth="598.0" text="Please choose your operation" GridPane.columnSpan="2" GridPane.rowIndex="1">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="insert" mnemonicParsing="false" onAction="#handleInsertButton" text="insert" textAlignment="CENTER" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+         <font>
+            <Font size="25.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="update" mnemonicParsing="false" text="update" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+         <font>
+            <Font size="25.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="delete" mnemonicParsing="false" text="delete" textAlignment="CENTER" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER">
+         <font>
+            <Font size="25.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="search" mnemonicParsing="false" text="search" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER">
+         <font>
+            <Font size="25.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Label alignment="TOP_CENTER" prefHeight="41.0" prefWidth="600.0" text="Welcome to our application" GridPane.columnSpan="2">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+   </children>
+</GridPane>
