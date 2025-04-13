@@ -9,7 +9,7 @@ import javafx.scene.control.Button;
 
 import java.io.IOException;
 
-public class insertController {
+public class searchController {
 
     @FXML
     private Button backButton;

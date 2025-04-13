@@ -1,5 +1,8 @@
-module-info.class
+com\mycompany\javadb\deleteController.class
 com\mycompany\javadb\PrimaryController.class
 com\mycompany\javadb\insertController.class
+com\mycompany\javadb\searchController.class
+module-info.class
+com\mycompany\javadb\updateController.class
 com\mycompany\javadb\App.class
 com\mycompany\javadb\DatabaseConnection.class
