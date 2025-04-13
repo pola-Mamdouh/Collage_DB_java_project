@@ -21,7 +21,7 @@ public class App extends Application {
 
     @Override
     public void start(Stage stage) throws IOException {
-          Rectangle2D screenBounds = Screen.getPrimary().getVisualBounds(); // تجيب أبعاد الشاشة
+          Rectangle2D screenBounds = Screen.getPrimary().getVisualBounds(); 
 
     scene = new Scene(loadFXML("primary"),
                       screenBounds.getWidth(),
