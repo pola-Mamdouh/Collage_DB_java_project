@@ -5,8 +5,6 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
-import javafx.geometry.Rectangle2D;
-import javafx.stage.Screen;
 
 import java.io.IOException;
 import java.sql.Connection;
@@ -20,21 +18,15 @@ public class App extends Application {
     private static Scene scene;
 
     @Override
-    public void start(Stage stage) throws IOException {
-          Rectangle2D screenBounds = Screen.getPrimary().getVisualBounds(); 
-
-    scene = new Scene(loadFXML("primary"),
-                      screenBounds.getWidth(),
-                      screenBounds.getHeight());
-
+public void start(Stage stage) throws IOException {
+    Parent root = FXMLLoader.load(getClass().getResource("primary.fxml"));
+    
+    Scene scene = new Scene(root, 600, 400);
+    stage.setTitle("Main App");        
     stage.setScene(scene);
-    stage.setX(screenBounds.getMinX());
-    stage.setY(screenBounds.getMinY());
-    stage.setWidth(screenBounds.getWidth());
-    stage.setHeight(screenBounds.getHeight());
-
     stage.show();
-    }
+}
+
 
     static void setRoot(String fxml) throws IOException {
         scene.setRoot(loadFXML(fxml));
